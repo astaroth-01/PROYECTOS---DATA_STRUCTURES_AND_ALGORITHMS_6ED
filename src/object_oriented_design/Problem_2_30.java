@@ -1,8 +1,8 @@
 /*
 *   Estructuras de datos y algoritmos sexta edición Wiley.
+*   Problema 2.30
 *   Programador: Angel Flores
 *   Correo electrónico: miguelangelflto6@gmail.com
-*
 *   Problema: Diseñar un programa que cuente el número de letras del abcedario
 *   que aparecen en un documento de texto.
 *   19 - Noviembre - 2025
@@ -16,7 +16,7 @@ import static java.lang.System.in;
 import java.util.HashMap;
 import java.util.Map;
 
-public class problem_2_32 {
+public class Problem_2_30 {
 
     private static Map<Character, Integer> alphabet = new HashMap<>();
 
@@ -25,7 +25,7 @@ public class problem_2_32 {
             alphabet.put(abc, 0);
         }
 
-        String file = "File Name";
+        String file = "Path to the file txt";
         try {
             BufferedReader in = new BufferedReader(new FileReader(file));
 
@@ -44,7 +44,7 @@ public class problem_2_32 {
             try {
                 in.close();
             } catch (IOException e) {
-                System.out.println("Error closing the flie");
+                System.out.println("Error closing the file");
             }
         }
         
