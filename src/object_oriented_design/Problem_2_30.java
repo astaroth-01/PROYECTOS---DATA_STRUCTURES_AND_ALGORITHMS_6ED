@@ -7,6 +7,7 @@
 *   que aparecen en un documento de texto.
 *   19 - Noviembre - 2025
  */
+
 package object_oriented_design;
 
 import java.io.BufferedReader;
